@@ -254,6 +254,12 @@ pimcore.plugin.workflow.transition = Class.create({
                     multiSelect: true,
                     queryMode: 'local',
                 },
+                {
+                    xtype: 'textfield',
+                    name: 'validation',
+                    value: transition.get('validation'),
+                    fieldLabel: t('workflow_transition_validation'),
+                },
             ]
         });
 
